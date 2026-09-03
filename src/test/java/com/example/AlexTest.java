@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class AlexTest {
 
     @Mock
-    private FelineBehavior felineMock;
+    private Feline felineMock;
 
     private Alex alex;
 

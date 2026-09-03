@@ -19,7 +19,7 @@ class ParameterizedTests {
     @ParameterizedTest
     @CsvSource({"Самец, true", "Самка, false"})
     void testLionHasManeBySex(String sex, boolean expectedHasMane) throws Exception {
-        FelineBehavior felineMock = Mockito.mock(FelineBehavior.class);
+        Feline felineMock = Mockito.mock(Feline.class);
         Lion lion = new Lion(sex, felineMock);
         assertEquals(expectedHasMane, lion.doesHaveMane());
     }

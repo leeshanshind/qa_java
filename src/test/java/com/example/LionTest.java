@@ -14,19 +14,7 @@ import static org.mockito.Mockito.*;
 class LionTest {
 
     @Mock
-    private FelineBehavior felineMock;
-
-    @Test
-    void testMaleHasMane() throws Exception {
-        Lion lion = new Lion("Самец", felineMock);
-        assertTrue(lion.doesHaveMane());
-    }
-
-    @Test
-    void testFemaleHasNoMane() throws Exception {
-        Lion lion = new Lion("Самка", felineMock);
-        assertFalse(lion.doesHaveMane());
-    }
+    private Feline felineMock;
 
     @Test
     void testInvalidSexThrowsException() {
